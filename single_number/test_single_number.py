@@ -13,7 +13,7 @@ class Test(unittest.TestCase):
         random.shuffle(arr)
         rand_index = random.randint(0, len(arr))
         num = arr.pop(rand_index)
-
+        print( arr )
         self.assertEqual(single_number(arr), num)
 
 

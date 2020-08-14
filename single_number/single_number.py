@@ -4,8 +4,18 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    # array to hold numbers for checking
+    check = []
 
-    pass
+    for item in arr:
+        # if the item is not in the check array add it
+        if item not in check:
+            check.append( item )
+        # item is in check array, remove it
+        else:
+            check.remove( item )
+    # only item left is single, return it
+    return check[ 0 ]
 
 
 if __name__ == '__main__':
