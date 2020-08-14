@@ -19,7 +19,7 @@ def eating_cookies( n, cache={} ):
     elif n <= 1:
         return 1
     elif n not in cache:
-        cache[ n ] = eating_cookies( n - 1, cache ) + eating_cookies( n - 2, cache ) + eating_cookies( n - 3 )
+        cache[ n ] = eating_cookies( n - 1, cache ) + eating_cookies( n - 2, cache ) + eating_cookies( n - 3, cache )
 
     return cache[ n ]
 
